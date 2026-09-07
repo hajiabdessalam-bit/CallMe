@@ -1,0 +1,27 @@
+workflows:
+  ios-workflow:
+    name: iOS Build
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+    scripts:
+      - name: Build iOS app
+        script: |
+          xcodebuild build \
+            -project CallMe.xcodeproj \
+            -scheme CallMe \
+            -sdk iphoneos \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+      - name: Package IPA
+        script: |
+          mkdir -p build/Payload
+          cp -r build/Build/Products/Release-iphoneos/CallMe.app build/Payload/
+          cd build
+          zip -r CallMe-Prototype.ipa Payload
+    artifacts:
+      - build/CallMe-Prototype.ipa
