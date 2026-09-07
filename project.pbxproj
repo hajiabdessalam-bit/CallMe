@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+
+	6433A15C-E87C-4274-BCB9-5A402FE766D0 = {
+		isa = PBXProject;
+		buildConfigurationList = 5ADCA61D-C10F-4FAA-AF3F-961DFD874BB8;
+		buildStyles = ();
+		buildTypes = ();
+		columnBreaks = ();
+		containsScriptDuplicatesInBuildOrder = NO;
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Debug;
+		developmentTeam = ;
+		hasScannedUserDefaults = 0;
+		knownRegions = (en);
+		mainGroup = B686D0F2-72BF-4A5A-A2A1-185D07059FCD;
+		productModuleName = CallMe;
+		projectDirPath = ;
+		projectRoot = $SRCROOT;
+		targets = (8E866319-FA27-4DD8-BA97-7FAD14CC3F29, 4927746E-1645-48EE-80AF-27750900AF2A);
+		sourceTree = <group>;
+	};
+	B686D0F2-72BF-4A5A-A2A1-185D07059FCD = {
+		isa = PBXGroup;
+		name = CallMe;
+		path = ;
+		children = (BA968B6B-62D9-4C4D-AB67-B2916CD24677, CE6321EC-D1AB-494F-B57C-5F5309AD782F, 4A562516-664D-4220-A8D2-76B8F284D5A4, 1AA8CD69-A6E4-4AD8-A48B-7AD777B12B0B, 6202106F-3CFB-4274-B8F8-21437A670C20, 8AE1C7C9-42DF-4C54-A134-AAD30D4FA257, 20C95DD2-B499-4360-82B6-F7D7534F912D, BB9678F6-1CFA-4665-B649-1068D2D42AFD, 5ADCA61D-C10F-4FAA-AF3F-961DFD874BB8);
+		sourceTree = <group>;
+	};
+	BA968B6B-62D9-4C4D-AB67-B2916CD24677 = {
+		isa = PBXGroup;
+		name = CallMe;
+		path = CallMe;
+		children = (4A562516-664D-4220-A8D2-76B8F284D5A4, 6202106F-3CFB-4274-B8F8-21437A670C20, 8AE1C7C9-42DF-4C54-A134-AAD30D4FA257);
+		sourceTree = <group>;
+	};
+	CE6321EC-D1AB-494F-B57C-5F5309AD782F = {
+		isa = PBXGroup;
+		name = CallMeWidget;
+		path = CallMeWidget;
+		children = (1AA8CD69-A6E4-4AD8-A48B-7AD777B12B0B);
+		sourceTree = <group>;
+	};
+	4A562516-664D-4220-A8D2-76B8F284D5A4 = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		path = CallMe/Info.plist;
+		sourceTree = SOURCE_ROOT;
+	};
+	1AA8CD69-A6E4-4AD8-A48B-7AD777B12B0B = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		path = CallMeWidget/Info.plist;
+		sourceTree = SOURCE_ROOT;
+	};
+	6202106F-3CFB-4274-B8F8-21437A670C20 = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.entitlements;
+		path = CallMe/CallMe.entitlements;
+		sourceTree = SOURCE_ROOT;
+	};
+	8AE1C7C9-42DF-4C54-A134-AAD30D4FA257 = {
+		isa = PBXFileReference;
+		lastKnownFileType = audio.wav;
+		path = CallMe/test-message.wav;
+		sourceTree = SOURCE_ROOT;
+	};
+	20C95DD2-B499-4360-82B6-F7D7534F912D = {
+		isa = PBXFileReference;
+		explicitFileType = wrapper.application;
+		includeInIndex = 0;
+		path = CallMe.app;
+		sourceTree = BUILT_PRODUCTS_DIR;
+	};
+	BB9678F6-1CFA-4665-B649-1068D2D42AFD = {
+		isa = PBXFileReference;
+		explicitFileType = wrapper.app-extension;
+		includeInIndex = 0;
+		path = CallMeWidget.appex;
+		sourceTree = BUILT_PRODUCTS_DIR;
+	};
+	5ADCA61D-C10F-4FAA-AF3F-961DFD874BB8 = {
+		isa = XCConfigurationList;
+		buildConfigurations = (C55052B5-D332-432C-8A0B-424F9A515075, FEF3D551-F8C9-4807-8773-CD4C1B4D2383);
+		defaultConfigurationName = Debug;
+	};
+	B203CA63-EE18-4F30-90DE-0B9B2D205266 = {
+		isa = XCConfigurationList;
+		buildConfigurations = (FBCA1C54-D70B-4356-95A1-96507E2FD2B9, 43CBF08F-2D11-4BD2-990F-B8450A0D8408);
+		defaultConfigurationName = Debug;
+	};
+	FBCA1C54-D70B-4356-95A1-96507E2FD2B9 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_IDENTITY = ; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ; ENABLE_PREVIEWS = YES; INFOPLIST_FILE = CallMe/Info.plist; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = com.callme.app; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; SDKROOT = iphoneos; CODE_SIGN_ENTITLEMENTS = CallMe/CallMe.entitlements; LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks; OTHER_LDFLAGS = $(inherited) -framework AlarmKit -framework AppIntents -framework WidgetKit -framework ActivityKit -framework AVFoundation; CLANG_ENABLE_MODULES = YES; GENERATE_INFOPLIST_FILE = NO;}
+		name = Debug;
+	};
+	43CBF08F-2D11-4BD2-990F-B8450A0D8408 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_IDENTITY = ; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ; INFOPLIST_FILE = CallMe/Info.plist; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = com.callme.app; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; SDKROOT = iphoneos; CODE_SIGN_ENTITLEMENTS = CallMe/CallMe.entitlements; LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks; OTHER_LDFLAGS = $(inherited) -framework AlarmKit -framework AppIntents -framework WidgetKit -framework ActivityKit -framework AVFoundation; CLANG_ENABLE_MODULES = YES; GENERATE_INFOPLIST_FILE = NO; SWIFT_OPTIMIZATION_LEVEL = -O; DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;}
+		name = Release;
+	};
+	49E2C9D6-6AA6-45DC-8B23-E890D51E0BEC = {
+		isa = XCConfigurationList;
+		buildConfigurations = (D393A913-43D7-49E3-AF17-65E96E910628, CF9EAEC9-563C-4C81-AA57-625308543281);
+		defaultConfigurationName = Debug;
+	};
+	D393A913-43D7-49E3-AF17-65E96E910628 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {SKIP_INSTALL = YES; PRODUCT_BUNDLE_IDENTIFIER = com.callme.app.widget; TARGETED_DEVICE_FAMILY = 1; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks; INFOPLIST_FILE = CallMeWidget/Info.plist; GENERATE_INFOPLIST_FILE = NO; CLANG_ENABLE_MODULES = YES;}
+		name = Debug;
+	};
+	CF9EAEC9-563C-4C81-AA57-625308543281 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {SKIP_INSTALL = YES; PRODUCT_BUNDLE_IDENTIFIER = com.callme.app.widget; TARGETED_DEVICE_FAMILY = 1; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks; INFOPLIST_FILE = CallMeWidget/Info.plist; GENERATE_INFOPLIST_FILE = NO; CLANG_ENABLE_MODULES = YES; DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;}
+		name = Release;
+	};
+	C55052B5-D332-432C-8A0B-424F9A515075 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ANALYZER_NONNULL = YES; CLANG_CXX_LANGUAGE_STANDARD = gnu++20; CLANG_CXX_LIBRARY = libc++; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_BOOL_CONVERSION = YES; CLANG_WARN_CONSTANT_CONVERSION = YES; CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_INFINITE_RECURSION = YES; CLANG_WARN_INT_CONVERSION = YES; CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES; CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR; CLANG_WARN_SUSPICIOUS_MOVES = YES; CLANG_WARN_UNREACHABLE_CODE = YES; CLANG_WARN__DUPLICATE_METHOD_MATCH = YES; DEBUG_INFORMATION_FORMAT = dwarf-with-dsym; ENABLE_STRICT_OBJC_MSGSEND = YES; ENABLE_TESTABILITY = YES; GCC_OPTIMIZATION_LEVEL = 0; GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; GCC_WARN_UNUSED_FUNCTION = YES; GCC_WARN_UNUSED_VARIABLE = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.0; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = -Onone;}
+		name = Debug;
+	};
+	FEF3D551-F8C9-4807-8773-CD4C1B4D2383 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ANALYZER_NONNULL = YES; CLANG_CXX_LANGUAGE_STANDARD = gnu++20; CLANG_CXX_LIBRARY = libc++; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_BOOL_CONVERSION = YES; CLANG_WARN_CONSTANT_CONVERSION = YES; CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_INFINITE_RECURSION = YES; CLANG_WARN_INT_CONVERSION = YES; CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES; CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR; CLANG_WARN_SUSPICIOUS_MOVES = YES; CLANG_WARN_UNREACHABLE_CODE = YES; CLANG_WARN__DUPLICATE_METHOD_MATCH = YES; DEBUG_INFORMATION_FORMAT = dwarf-with-dsym; ENABLE_STRICT_OBJC_MSGSEND = YES; ENABLE_TESTABILITY = YES; GCC_OPTIMIZATION_LEVEL = 0; GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; GCC_WARN_UNUSED_FUNCTION = YES; GCC_WARN_UNUSED_VARIABLE = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.0; SDKROOT = iphoneos; SWIFT_OPTIMIZATION_LEVEL = -O;}
+		name = Release;
+	};
+	F0E5CE8A-B1C7-4E46-B989-B5CD352D4ECE = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (193885D5-56D7-468B-A6CF-ACE80344DE9D, 6E1EBAF3-5914-4577-8C79-D1500FB31FF2, 35006CBC-F484-4722-B6C4-0E1A82A9BD23, 3974A5AC-EFB4-42A4-8EB8-77C89DD57A80, E7258555-3078-47F3-A590-B8C2A027605C, 34CBB0FF-0213-4687-B6C6-82E934ADCC13);
+		runOnlyWhenInstalling = NO;
+		sourceBuildPhase = YES;
+	};
+	BCB40B4C-2FB1-4DCE-A1DA-3BEDDE8DA06F = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = ();
+		runOnlyWhenInstalling = NO;
+	};
+	1D32D7B6-F870-4DED-AE6E-196356FD7D5C = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = 2251E1EA-2BFD-4F86-9FC8-A74719187560;
+		runOnlyWhenInstalling = NO;
+	};
+	CF65BFFD-F7D0-446D-A304-6223684A8422 = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (2C21FE29-7EA1-4FC6-B650-2E1076F2EF66, 8346F036-E989-43B4-8313-F67E967BDFD9, 503BF1FB-9153-4812-A6B2-260FBB691107);
+		runOnlyWhenInstalling = NO;
+		sourceBuildPhase = YES;
+	};
+	BE212DFB-C321-4EAD-8703-549C1ECC60BD = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = ();
+		runOnlyWhenInstalling = NO;
+	};
+	2692951F-C5F1-476E-A6E5-270E912D99D2 = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = ();
+		runOnlyWhenInstalling = NO;
+	};
+	19D8A225-63A5-404E-ACCE-B48D4B92B6B6 = {
+		isa = PBXBuildFile;
+		fileRef = 4A562516-664D-4220-A8D2-76B8F284D5A4;
+	};
+	503BF1FB-9153-4812-A6B2-260FBB691107 = {
+		isa = PBXBuildFile;
+		fileRef = 1AA8CD69-A6E4-4AD8-A48B-7AD777B12B0B;
+	};
+	4C986289-4DC5-48CF-BBD5-54753D028181 = {
+		isa = PBXBuildFile;
+		fileRef = 6202106F-3CFB-4274-B8F8-21437A670C20;
+	};
+	2251E1EA-2BFD-4F86-9FC8-A74719187560 = {
+		isa = PBXBuildFile;
+		fileRef = 8AE1C7C9-42DF-4C54-A134-AAD30D4FA257;
+	};
+	193885D5-56D7-468B-A6CF-ACE80344DE9D = {
+		isa = PBXBuildFile;
+		fileRef = 783D038E-0EA3-4049-B65A-1B2A643F79FD;
+	};
+	6E1EBAF3-5914-4577-8C79-D1500FB31FF2 = {
+		isa = PBXBuildFile;
+		fileRef = BB01759E-E3DE-4ECE-A7A1-A38276D28B9A;
+	};
+	35006CBC-F484-4722-B6C4-0E1A82A9BD23 = {
+		isa = PBXBuildFile;
+		fileRef = FB4DA7F9-5F49-4651-99F3-876997A3E329;
+	};
+	3974A5AC-EFB4-42A4-8EB8-77C89DD57A80 = {
+		isa = PBXBuildFile;
+		fileRef = 8E6DB924-B4A1-40B8-925C-D1E1DB07CDCD;
+	};
+	E7258555-3078-47F3-A590-B8C2A027605C = {
+		isa = PBXBuildFile;
+		fileRef = DCFA2543-CFB2-4D76-96FA-0225166C801C;
+	};
+	34CBB0FF-0213-4687-B6C6-82E934ADCC13 = {
+		isa = PBXBuildFile;
+		fileRef = B705E8F3-94FC-45A7-A634-0E50FBA6A992;
+	};
+	2C21FE29-7EA1-4FC6-B650-2E1076F2EF66 = {
+		isa = PBXBuildFile;
+		fileRef = ED4AEA07-1549-441E-BEFD-97B3A1604AE9;
+	};
+	8346F036-E989-43B4-8313-F67E967BDFD9 = {
+		isa = PBXBuildFile;
+		fileRef = 0150CB64-B6BB-401A-AB52-8B375EF15872;
+	};
+	783D038E-0EA3-4049-B65A-1B2A643F79FD = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMe/CallMeApp.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	BB01759E-E3DE-4ECE-A7A1-A38276D28B9A = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMe/ContentView.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	FB4DA7F9-5F49-4651-99F3-876997A3E329 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMe/CallMeAlarmMetadata.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	8E6DB924-B4A1-40B8-925C-D1E1DB07CDCD = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMe/AnswerCallIntent.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	DCFA2543-CFB2-4D76-96FA-0225166C801C = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMe/AudioPlayer.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	B705E8F3-94FC-45A7-A634-0E50FBA6A992 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMe/AlarmScheduler.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	ED4AEA07-1549-441E-BEFD-97B3A1604AE9 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMeWidget/CallMeWidget.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	0150CB64-B6BB-401A-AB52-8B375EF15872 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CallMeWidget/CallMeWidgetIntentPlaceholder.swift;
+		sourceTree = SOURCE_ROOT;
+	};
+	4927746E-1645-48EE-80AF-27750900AF2A = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 49E2C9D6-6AA6-45DC-8B23-E890D51E0BEC;
+		buildPhases = (CF65BFFD-F7D0-446D-A304-6223684A8422, BE212DFB-C321-4EAD-8703-549C1ECC60BD, 2692951F-C5F1-476E-A6E5-270E912D99D2);
+		buildRules = ();
+		dependencies = ();
+		name = CallMeWidget;
+		productName = CallMeWidget;
+		productReference = BB9678F6-1CFA-4665-B649-1068D2D42AFD;
+		productType = com.apple.product-type.app-extension;
+	};
+	B825F7C6-8552-4995-8F85-D9602824DDE6 = {
+		isa = PBXContainerItemProxy;
+		containerPortal = B686D0F2-72BF-4A5A-A2A1-185D07059FCD;
+		proxyType = 1;
+		remoteGlobalID = 4927746E-1645-48EE-80AF-27750900AF2A;
+		remoteInfo = CallMeWidget;
+	};
+	1C67EE8F-8EB6-4BF4-A311-1B3F1085CD07 = {
+		isa = PBXTargetDependency;
+		target = 4927746E-1645-48EE-80AF-27750900AF2A;
+		targetProxy = B825F7C6-8552-4995-8F85-D9602824DDE6;
+	};
+	8E866319-FA27-4DD8-BA97-7FAD14CC3F29 = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = B203CA63-EE18-4F30-90DE-0B9B2D205266;
+		buildPhases = (F0E5CE8A-B1C7-4E46-B989-B5CD352D4ECE, BCB40B4C-2FB1-4DCE-A1DA-3BEDDE8DA06F, 1D32D7B6-F870-4DED-AE6E-196356FD7D5C);
+		buildRules = ();
+		dependencies = (1C67EE8F-8EB6-4BF4-A311-1B3F1085CD07);
+		name = CallMe;
+		productName = CallMe;
+		productReference = 20C95DD2-B499-4360-82B6-F7D7534F912D;
+		productType = com.apple.product-type.application;
+	};

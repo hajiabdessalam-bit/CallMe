@@ -1,0 +1,74 @@
+platform: ios
+deployment_target: "26.0"
+devices: [iphone]
+exclude_files:
+  from_root:
+    - "DEVELOPMENT_LOG.md"
+    - "README.md"
+  from: CallMeWidget
+    - ".*.md"
+    - ".*.txt"
+
+targets:
+  CallMe:
+    type: application
+    platform: ios
+    deployment_target: "26.0"
+    sources:
+      - path: CallMe
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        INFOPLIST_FILE: CallMe/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.callme.app
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: false
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: true
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: false
+        OTHER_LDFLAGS:
+          - "-framework AlarmKit"
+          - "-framework AppIntents"
+          - "-framework WidgetKit"
+          - "-framework ActivityKit"
+          - "-framework AVFoundation"
+    entitlements:
+      path: CallMe/CallMe.entitlements
+      properties:
+        com.apple.developer.alarmkit: true
+    dependencies:
+      - target: CallMeWidget
+        embed: true
+        code_signing_identity: ""
+
+  CallMeWidget:
+    type: app-extension
+    platform: ios
+    deployment_target: "26.0"
+    sources:
+      - path: CallMeWidget
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        INFOPLIST_FILE: CallMeWidget/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.callme.app.widget
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: true
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: false
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+          - "@executable_path/../../Frameworks"
